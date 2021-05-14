@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 1 - JavaScript</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+  <main>
+    <form>
+      <div class="item">
+        <label for="original">Texto</label>
+        <textarea name="original" id="original" rows="10"></textarea>
+        <p>Caracteres digitados: <span id="telao"></span></p>
+      </div>
+      <div class="item">
+        <label for="efeito">Efeito</label>
+        <select id="efeito">
+          <option value="uppercase">Maiúsculas</option>
+          <option value="lowercase">Minúsculas</option>
+        </select>
+      </div>          
+      <div class="item">
+        <label for="modificado">Modificado</label>
+        <div class="textoModificado">
+          <textarea name="modificado" id="modificado" rows="10" disabled></textarea>
+          <button id="copiar"><ion-icon name="copy-outline"></ion-icon></button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

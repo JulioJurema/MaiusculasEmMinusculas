@@ -1,0 +1,91 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+
+* {
+  font-family: 'Noto Sans JP';
+  font-weight: 400;
+  color: #333333;
+}
+
+body, p { 
+  margin: 0;
+}
+#original{
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form .item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 5px;
+}
+
+select {
+  border: none;
+  background-color: #eee;
+  padding: 5px;
+  margin: 5px 0;
+}
+select:hover{
+  background-color: #ddd; 
+}
+
+textarea {
+  resize: none;
+  border: none;
+  padding: 5px;
+  background-color: #eee;
+}
+
+#modificado{
+width: 90%;
+}
+.textoModificado{
+  display: flex;
+  border-radius: 0;
+}
+button{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  align-items: center;
+  border: none;
+  border-radius: 0; 
+  background-color: #ddd;
+}
+
+button:hover{
+  background-color: #ccc; 
+}
+
+input {
+  font-size: 1.5em;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 5px 20px;
+}
+
+ @media screen and (max-width: 650px){
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  button{
+    width: 100%;
+    padding: 10px;
+  }
+  #modificado{
+    width: auto;
+  }  
+  .textoModificado{
+    flex-direction: column;
+  }
+ }
